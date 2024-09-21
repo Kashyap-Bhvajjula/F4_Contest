@@ -1,0 +1,91 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; 
+  margin: 0; 
+  background-color: #f0f0f0; 
+}
+
+.calculator-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px; 
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow:
+  10px 10px 30px rgba(255, 105, 180, 0.5), 
+  -10px -10px 30px rgba(128, 0, 128, 0.5);
+  background-color: white; 
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.input-box {
+  width: 100%; 
+  max-width: 200px; 
+  height: 20px; 
+  margin: 10px 0;
+  padding: 10px;
+  border: 2px solid #000; 
+  border-radius: 5px;
+  background-color: white; 
+  color: black; 
+  font-size: 14px; 
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; 
+  max-width: 230px;
+}
+
+button {
+  flex: 1; 
+  margin: 0 5px;
+  height: 50px; 
+  border: 2px solid black;
+  background-color: black; 
+  color: white; 
+  cursor: pointer;
+  font-size: 18px; 
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.1); 
+}
+
+.error-message {
+  margin-top: 10px;
+  color: black; 
+  text-align: center; 
+  width: 100%; 
+}
+
+.error-title {
+  font-weight: bold;
+  color: red; 
+  text-align: center; 
+}
+
+.success-message {
+  color: blue; 
+  text-align: center; 
+}
+
+.result-message {
+  color: green; 
+  margin-top: 10px; 
+  text-align: center; 
+}
+
+.input-box::placeholder {
+  font-weight: bold; 
+  color: black; 
+}
